@@ -1,0 +1,6 @@
+TRIGGER DE PAPELERIA PRODUCTOS DESCONTINUADOS
+
+CREATE TRIGGER productos_descontinuados BEFORE DELETE ON productos 
+FOR EACH ROW INSERT INTO descontinuados (id_productos,nombre,cantidad,precio,imagen,fecha_salida,hora_salida)
+VALUES(OLD.id_productos,OLD.nombre,OLD.cantidad,OLD.precio,OLD.imagen,NOW(),TIME(NOW()));
+
