@@ -20,6 +20,7 @@ $query=mysqli_query($con,$sql);
 <head>
 	<title>Productos</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style_menu.css">
 	<style>
   body {
     background-color: #6fb98f;
@@ -27,11 +28,14 @@ $query=mysqli_query($con,$sql);
 </style>
 
 </head>
-	<div>
-		<a href="index.php">Inicio</a>
-		<a href="agregar.php">Nuevo Registro</a>
-		<a href="productos_descontinuados.php">Productos descontinuados</a>
-		<h1 align="center">Inicio</h1>
+<body>
+<ul>
+  <li><a href="index.php" class="active">Inicio</a></li>
+  <li><a href="agregar.php">Nuevo Registro</a></li>
+  <li><a href="productos.php">Productos</a></li>
+  <li><a href="productos_descontinuados.php">Productos descontinuados</a></li>
+</ul>
+<h1 align="center">Inicio</h1>
 <form action="index.php" method="post">
 <div align="center">
   <label for="search-id">Buscar por ID:</label>
