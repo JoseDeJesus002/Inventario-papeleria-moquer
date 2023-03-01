@@ -16,14 +16,16 @@ $id_productos =$_POST['id_productos'];
 $nombre = $_POST['nombre'];
 $cantidad = $_POST['cantidad'];
 $precio = $_POST['precio'];
+$descripcion = $_POST['descripcion'];
+$categoria = $_POST['categoria'];
 $imagen = $_POST['imagen'];
 $fecha_ingreso= date("y/m/d");
 $hora_ingreso = date('h:i:s');
 
 
-if ($id_productos!=null || $nombre!=null || $cantidad!=null || $precio!=null) 
+if ($id_productos!=null || $nombre!=null || $cantidad!=null || $precio!=null || $descripcion!=null || $categoria!=null || $imagen!=null || $fecha_ingreso!=null || $hora_ingreso!=null) 
 {
-	$sql="UPDATE productos SET id_productos='$id_productos',nombre='$nombre',cantidad='$cantidad', precio='$precio', imagen='$imagen', fecha_ingreso='$fecha_ingreso', hora_ingreso='$hora_ingreso' WHERE id_productos ='$id_productos'";
+	$sql="UPDATE productos SET id_productos='$id_productos',nombre='$nombre',cantidad='$cantidad', precio='$precio',descripcion='$descripcion',categoria='$categoria', fecha_ingreso='$fecha_ingreso', hora_ingreso='$hora_ingreso' WHERE id_productos ='$id_productos'";
 	mysqli_query($con, $sql);
 	if($user=1){
 		header("location:index.php");

@@ -42,6 +42,23 @@
 				<label>Precio</label><br>
 				<input type="text" name="precio" maxlength="5" value="<?php echo $row['precio']?>"><br><br>
 
+				<label>Descripcion</label><br>
+				<input type="text" name="descripcion" maxlength="500" value="<?php echo $row['descripcion']?>"><br><br>
+
+				<label>Categoria</label><br>
+				
+				<select name="categoria">
+					<option value="0">Selecciona una categoria</option>
+					<?php
+					$categoria = "SELECT * FROM categorias";
+					$resultado=mysqli_query($con,$categoria);
+					while ($row = mysqli_fetch_array($resultado)) 
+					{
+						echo '<option value="'.$row['id'].'">'.$row['categoria'].'</option>';
+					}
+					?>
+				</select>
+
 				<label>Imagen</label><br>
 				<img width="100" src="data:<?php echo $row['tipo']; ?>;base64,<?php echo  base64_encode($row['imagen']); ?>">
 

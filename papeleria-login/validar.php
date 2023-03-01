@@ -7,10 +7,8 @@
         {
             alert("ingrese nombre de usuario y password");
             return false;
-        }
-    }
-    else
-    {
+        }else
+        {
         if(id.length=="")
         {
             alert("ingrese nombre de usuario");
@@ -22,4 +20,5 @@
             return false;
         }
     }
+}
 </script>

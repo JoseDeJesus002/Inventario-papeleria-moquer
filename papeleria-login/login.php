@@ -13,5 +13,6 @@
         <p>password <input type="password" name="password" placeholder="contraseña"></p>
         <p><input type="submit" value="Ingresar"></p>
     </form>
+    <a href="registro_login.php">Registrarse</a>
 </body>
 </html>

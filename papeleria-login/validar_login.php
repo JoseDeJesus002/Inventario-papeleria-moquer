@@ -17,7 +17,7 @@ if($filas['id_rol']==1){
     echo '<script language="javascript">alert("Bienvenido administrador");  window.location="index.php"</script>';
 }else
     if($filas['id_rol']==2){
-        header("location:cliente.php");
+        header("location:productos.php");
     }
 else{
     ?>
