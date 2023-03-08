@@ -38,6 +38,7 @@
 		?>
 		<div>
 			<form action="insertar.php" method="POST" enctype="multipart/form-data">
+			<h1>Agregar producto</h1>
 				<label>Id del productos</label><br>
 				<input type="text" name="id_productos" maxlength="11"><br>
 

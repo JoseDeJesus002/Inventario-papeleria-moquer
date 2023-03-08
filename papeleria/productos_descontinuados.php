@@ -38,7 +38,8 @@ $query = mysqli_query($con, $sql);
 			<li><a href="productos_descontinuados.php" class="active">Productos descontinuados</a></li>
 			<li style="float:right"><a href="login.php">Salir</a></li>
 		</ul>
-
+<br>
+<br>
 		<h1 align="center" class="title">Productos descontinuados</h1>
 		<form action="index.php" method="post">
 			<div align="center">

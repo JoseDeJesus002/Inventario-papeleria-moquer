@@ -22,7 +22,7 @@
 		?>
 		<div>
 			<form action="registrar_login.php" method="POST" enctype="multipart/form-data">
-
+			<h1>Registro</h1>
 				<label>Id rol</label><br>
 				<input type="text" name="id_rol" maxlength="30" value="2" readonly><br>
 				

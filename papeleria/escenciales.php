@@ -20,9 +20,9 @@ $query = mysqli_query($con, $sql);
 
 <head>
   <title>Punto de venta</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+<!--   <link rel="stylesheet" type="text/css" href="css/style.css"> -->
   <link rel="stylesheet" type="text/css" href="css/style_productos.css">
-  <link rel="stylesheet" type="text/css" href="css/style_menu.css">
+<!--   <link rel="stylesheet" type="text/css" href="css/style_menu.css"> -->
   <style>
     body {
       background-color: #6fb98f;
@@ -34,8 +34,8 @@ $query = mysqli_query($con, $sql);
 <body>
   <ul class="menu">
     <li><a href="productos.php">Productos</a></li>
-    <li><a href="libretas.php" class="active">Libretas</a></li>
-    <li><a href="escenciales.php">Escenciales para la escuela</a></li>
+    <li><a href="libretas.php">Libretas</a></li>
+    <li><a href="escenciales.php" class="active">Escenciales para la escuela</a></li>
     <li><a href="arte.php">Arte</a></li>
     <li><a href="libros.php">Libros</a></li>
     <li style="float:right"><a href="login.php">Salir</a></li>
@@ -49,8 +49,9 @@ $query = mysqli_query($con, $sql);
     </div>
   </form>
   <?php
-    $sql = "SELECT * FROM productos WHERE categoria = 1";
+    $sql = "SELECT * FROM productos WHERE categoria = 2";
     $query = mysqli_query($con, $sql);
+
   ?>
   <br>
   <?php
@@ -58,6 +59,7 @@ $query = mysqli_query($con, $sql);
 
 
   ?>
+  <div class="flex-container">
     <div class="flex-item">
       <div class="card-title">
         <p>Codigo: <?php echo $row['id_productos'] ?></p>

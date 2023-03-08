@@ -14,16 +14,17 @@ $resultado=mysqli_query($conexion,$consulta);
 $filas=mysqli_fetch_array($resultado);
 
 if($filas['id_rol']==1){
-    echo '<script language="javascript">alert("Bienvenido administrador");  window.location="index.php"</script>';
+    echo '<script language="javascript">alert("Haz ingresado como administrador");  window.location="index.php"</script>';
 }else
     if($filas['id_rol']==2){
-        header("location:productos.php");
+        echo '<script language="javascript">alert("Haz ingresado como cliente");  window.location="productos.php"</script>';
+        // header("location:productos.php");
     }
 else{
     ?>
     <?php
     include("login.php");
-    echo '<script language="javascript">alert("Autenticacion incorrecta");  window.location="login.php"</script>';
+    echo '<script language="javascript">alert("Usuario/contraseña incorecta");  window.location="login.php"</script>';
     ?>
     
     <?php

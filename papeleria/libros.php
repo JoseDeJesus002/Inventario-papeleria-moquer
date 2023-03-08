@@ -20,9 +20,9 @@ $query = mysqli_query($con, $sql);
 
 <head>
   <title>Punto de venta</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+<!--   <link rel="stylesheet" type="text/css" href="css/style.css"> -->
   <link rel="stylesheet" type="text/css" href="css/style_productos.css">
-  <link rel="stylesheet" type="text/css" href="css/style_menu.css">
+ <!--  <link rel="stylesheet" type="text/css" href="css/style_menu.css"> -->
   <style>
     body {
       background-color: #6fb98f;
@@ -58,6 +58,7 @@ $query = mysqli_query($con, $sql);
 
 
   ?>
+  <div class="flex-container">
     <div class="flex-item">
       <div class="card-title">
         <p>Codigo: <?php echo $row['id_productos'] ?></p>

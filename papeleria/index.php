@@ -21,7 +21,7 @@ $query = mysqli_query($con, $sql);
 <head>
 	<title>Productos</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/style_menu.css">
+<!-- 	<link rel="stylesheet" type="text/css" href="css/style_menu.css"> -->
 	<style>
 		body {
 			background-color: #6fb98f;
@@ -37,6 +37,8 @@ $query = mysqli_query($con, $sql);
 		<li><a href="productos_descontinuados.php">Productos descontinuados</a></li>
 		<li style="float:right"><a href="login.php">Salir</a></li>
 	</ul>
+	<br>
+	<br>
 	<h1 align="center" class="title">Inicio</h1>
 	<form action="index.php" method="post">
 		<div align="center">
